@@ -1,0 +1,127 @@
+/* Global Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering the form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Glassmorphism effect */
+.login-form {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Heading */
+.login-form h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: black;
+    font-weight: 600;
+}
+
+/* Input fields */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+    outline: none;
+    transition: 0.3s;
+    margin-top: 5px;
+}
+
+/* Placeholder color */
+.login-form input::placeholder {
+    color: black;
+}
+
+/* Input field focus effect */
+.login-form input:focus {
+    border-bottom: 2px solid #fff;
+}
+
+/* Button styling */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: #ff7eb3;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.login-form button:hover {
+    background: #ff4f9a;
+    transform: scale(1.05);
+}
+
+/* Forgot Password link */
+.login-form .forgot-password {
+    margin-top: 10px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.login-form .forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    .login-form {
+        width: 90%;
+    }
+}
+/* Error message container */
+.error {
+    color: #ff4f4f;
+    background: rgba(255, 79, 79, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 79, 79, 0.5);
+}
+
+/* Shake animation for errors */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.error.shake {
+    animation: shake 0.3s ease-in-out;
+}
+

@@ -1,0 +1,178 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f0f2f5;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* App Container */
+.app-container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* App Title */
+h1 {
+  color: #333;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* Task Input */
+.task-input {
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.task-input input {
+  padding: 12px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border 0.3s;
+}
+
+.task-input input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.task-input button {
+  padding: 12px 18px;
+  border: none;
+  background: #28a745;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.task-input button:hover {
+  background: #218838;
+}
+
+/* Task List */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.task-list li {
+  background: white;
+  padding: 12px;
+  margin: 8px auto;
+  width: 100%;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+}
+
+.task-list li:hover {
+  transform: scale(1.02);
+}
+
+.task-list button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.task-list button:hover {
+  background: black;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.auth-buttons button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.auth-buttons button:first-child {
+  background: #007bff;
+  color: white;
+}
+
+.auth-buttons button:first-child:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.auth-buttons button:last-child {
+  background: #dc3545;
+  color: white;
+}
+
+.auth-buttons button:last-child:hover {
+  background: #b02a37;
+  transform: scale(1.05);
+}
+/* Logout Button */
+.logout-btn {
+  margin-top: 3rem;
+  padding: 12px 18px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.logout-btn:hover {
+  background: #b02a37;
+  transform: scale(1.05);
+}
+
+
+/* Weather Info */
+.weather-info {
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-left: 38px;
+  font-size: 18px;
+  color: #555;
+  padding: 50px;
+  background: #eef2f3;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 70%;
+  
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
